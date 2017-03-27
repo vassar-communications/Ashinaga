@@ -1,0 +1,132 @@
+@import "_imports";
+
+.u-Search {
+	display: none;
+}
+.u-Masthead__siteName {
+}
+.intro {
+	top: 0;
+}
+.u-lMain {
+}
+body {
+	position: relative;
+	max-width: 1024px;
+	margin: 0 auto !important;	/*	body margin is being set to 0 in site */
+	padding: 1% 4% 0 4%;
+}
+
+.u-NavSite {
+	display: none;
+}
+
+.ac-NavAnchor--menu {
+	display: none;
+}
+
+
+/*	DirectedBy
+	---------- */
+	
+.directedBy {
+	max-width: 32em;
+	margin: 0 auto;
+	text-align: center;
+	padding: 2%;
+}
+
+
+
+/*	Masthead
+	-------- */
+
+.u-Masthead__siteName {
+	margin-top: 3.6em;
+	margin-bottom: 1em;
+}
+@media all and (min-width: $small) {
+	.u-Masthead__siteName {
+		margin-top: 0;
+		margin-bottom: 0;
+	}
+	.world {
+		padding-top: .45em;
+	}
+	.u-Masthead {
+		margin-top: 4em;
+		margin-bottom: 2em;
+	}
+}
+
+
+/*	Modules
+	------- */
+
+@media screen {
+	.modulesArea {
+		max-width: 40em;
+		margin: 0 auto;
+	}
+	.Module--mainContent.Module--halfWidth:first-child {
+		margin-bottom: 2em;
+	}
+}
+@media all and (min-width: $small) {
+	.Module--mainContent.Module--halfWidth:first-child {
+		margin-bottom: 0;
+	}
+}
+
+
+/*	Jumplinks
+	--------- */
+
+.jumplinks {
+	clear: both;
+}
+
+
+/*	Footer
+	------ */
+
+.u-List--site,
+.u-VCard__info {
+	margin: 0;
+	padding: 0;
+}
+.u-VCard__info,
+.u-List--site {
+	position: relative;
+	margin-top: .25em;
+	padding-top: .25em;
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

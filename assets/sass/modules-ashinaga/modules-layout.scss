@@ -1,0 +1,64 @@
+@import "_imports";
+
+
+.officeMod--inner li {
+	margin-bottom: .5em;
+}
+
+.modulesArea {
+	margin-top: 1em;
+}
+.modulesArea__row {
+	padding: 0;
+	display: block;
+}
+/*
+.Module {
+	margin-bottom: 1em;
+}
+*/
+
+
+/*	Module lists
+	------------ */
+
+.Module__listItem {
+	list-style: none;
+	margin: 0;
+	padding: 0;
+	margin-bottom: 1em;
+}
+.Module__title {
+	display: block;
+}
+
+
+@media all and (min-width: $small) {
+
+	.modulesArea .Module.Module--halfWidth:first-child {
+		padding-right: 4%;
+	}
+	.modulesArea__col:first-of-type {
+		padding-left: 0;
+	}
+	.modulesArea .Module.Module--halfWidth {
+		width: 50%;
+		float: left;
+	}
+	.modulesArea .Module.Module--fullWidth {
+		width: 100%;
+		display: block;
+		clear: both;
+		border-right: none;	
+	}
+
+	.modulesArea .Module.Module--halfWidth:last-child {
+		padding-left: 4%;	
+	}
+	.modulesArea__row {
+		overflow: hidden;
+		padding: 1em 0;
+	}
+	.modulesArea__col--half {
+	}
+}

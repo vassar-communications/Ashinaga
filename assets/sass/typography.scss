@@ -1,0 +1,231 @@
+@import "_imports";
+
+
+
+
+
+/*	font: font-style font-variant font-weight font-size/line-height font-family	*/
+
+html {
+	font-size: 100%;
+	font-family: $sans-serif;
+}
+h3, h4, h5, h6 {
+	font-family: $sans-serif;
+}
+p {
+	font: 1.1em/1.2 $sans-serif;
+}
+li, blockquote {
+	font: .85em/1.1 $sans-serif;
+}
+.u-lContent h2 {
+	font: 1.6em $serif;
+	font-style: italic;
+	position: relative;
+	margin-bottom: .7em;
+	margin-top: .4em;
+}
+.u-lContent h2:after {
+	position: absolute;
+	content: "";
+	border-top: 3px solid #ccb66f;
+	bottom: 0;
+	right: 45%;
+	left: 45%;
+	bottom: -.2em;
+}
+.u-lContent {
+	font-size: 1em;
+}
+
+
+/*	Masthead
+	-------- */
+
+
+.atHome,
+.world {
+    font: 2em/.9 $serif;
+}
+.inThe {
+	font: italic .6em/2 $serif;
+    display: block;
+    text-transform: uppercase;
+    letter-spacing: .5em;
+	margin-top: -.5em;
+	margin-bottom: .5em;
+	padding: .5em 0;
+}
+.u-lHeader {
+    font-family: $serif;
+    text-align: center;
+}
+.u-lContent p.intro {
+	font: 1.2em/1.3 $serif;
+}
+.intro {
+	margin-bottom: 2em;
+}
+.u-Masthead__vassar--link {
+	text-transform: uppercase;
+	font-style: normal;
+	letter-spacing: 2px;
+	font-weight: bold;
+	font-family: $sans-serif;
+}
+
+@media all and (min-width: $medium) {
+	.u-lHeader {
+	    padding-right: 4%;
+	}
+	.u-Masthead__vassar--link {
+		display: block;
+		margin-top: 2em;
+		position: relative;
+		margin-bottom: 2em;
+		text-align: right;
+	}
+	.u-Masthead__vassar--link:before {
+		content: "";
+		position: absolute;
+		width: 25%;
+		border: 2px solid #eee;
+		height: 1px;
+		right: 0;
+		top: -1.6em;
+	}
+	.u-Masthead__siteName {
+		margin-top: 9vw !important;
+	}
+	.atHome,
+	.world {
+	    font: 9vw/.9 $serif;
+	}
+	.inThe {
+	    font: italic 2vw/2 $serif;
+	}
+	.u-lContent p.intro {
+		margin-top: 3.4em;
+	    padding-left: 4%;
+		font: 1em/1.3 $serif;	
+	}
+	.u-lHeader {
+	    text-align: right;
+		float: left;
+		width: 40%;
+		position: relative;
+	}
+	.u-lHeader:after {
+		position: absolute;
+		content: "";
+		height: auto;
+		width: 2px;
+		border-right: 2px solid #eee;
+		top: 4em;
+		bottom: 2em;
+		right: 0;
+	}
+	.intro {
+		width: 60%;
+		float: right;
+	}
+}
+@media all and (min-width: 867px) {
+	.u-lContent p.intro {
+		font: 2.2vw/1.3 $serif;	
+	}
+}
+@media all and (min-width: $large) {
+	.u-lContent p.intro {
+		font: 1.15em/1.3 $serif;
+	}
+	.u-Masthead__siteName {
+		margin-top: 2.2em !important;
+	}
+
+}
+
+@media (min-width: 1200px) {
+	.atHome,
+	.world {
+	    font: 2.8em/.8 $serif;
+	}
+}
+
+
+/*	Jumplinks
+	--------- */
+
+.jumplinks {
+	display: block;
+	background: #ccb66f;
+	width: 100%;
+	overflow: hidden;
+	text-align: center;
+	margin-bottom: 3em;
+}
+.jumplinks__list {
+	margin: .35em 0 .65em 0;
+}
+.jumplinks__listItem {
+	display: inline;
+	list-style: none;
+	padding: 0;
+}
+.jumplinks__link {
+	font-weight: bold;
+	color: #fff;
+	font-size: .9em;
+}
+.jumplinks__link:hover {
+	color: #000;
+}
+.jumplinks__link:before {
+	content: "·";
+	margin-left: .4em;
+	margin-right: .5em;
+}
+.jumplinks__listItem:first-child .jumplinks__link:before {
+	display: none;
+}
+
+
+
+/*	Modules
+	------- */
+
+.Module {
+	text-align: center;
+}
+.Module__title {
+	font-weight: bold;
+	margin-bottom: .25em;
+}
+.Module__listItem {
+	line-height: 1.4;
+}
+.Module__list {
+	padding: 0;
+}
+.Module__subHeader {
+	font: italic 1em/1.2 "Bookmania";
+	color: #56a;
+}
+@media all and (min-width: $small) {
+	.Module__subHeader {
+		margin-top: 1.6em;
+		border-top: 1px solid #eee;
+		padding-top: 1.2em !important;
+	}
+}
+
+
+
+
+
+
+
+
+
+
